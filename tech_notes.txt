@@ -1,0 +1,18 @@
+# Technical Overview
+
+1. Obtain temporal imagery for a few landslide sight before landslide
+2. Obtain temporal imagery for a few non-landslide
+3. Play with filters to find contrast that seperates the landslide area contra non landslide
+    - use different layers
+3. Rotate images
+4.
+
+
+cc cover:
+- sentinel 1
+  -
+
+landset back to 2013 (15 m reso)
+
+RF -> cloud
+apply
