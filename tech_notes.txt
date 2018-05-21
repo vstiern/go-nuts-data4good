@@ -1,3 +1,39 @@
+# Model Methodology
+
+1. Construct inSAR imagery from Sentinel 1.
+- highlight areas where the rate(velocity) of the ground movement is above certain threshold.
+- Select area above velocity threshold (still to be defined).
+
+2. Add DEM imagery -> assess slope gradient - increase/decrease landslide susceptibility.
+- filter from inSAR stage, areas above gradient threshold. (still to be defined)
+
+3. Add Sentinel 2 bands/filter + Sentinel 1 radar bands (ML discovery begins)
+- Focus on areas filtered from inSAR and DEM stage.
+- Allow model to find patterns using all bands/filters e.g. loss of vegetation, retainment of soil moistrue.
+- Hope model finds changes in those bands that allows us to separate landslide areas from non-landslide areas.
+- Aim: to find patterns at the earliest possible date prior to landslide.
+
+# Questions:
+Sentinel 1:
+- What is the radar showing, colour palette meaning in various bands - slope, height, terrain?
+- How do make an inSAR image from sentinel 1? We understand that an inSAR image is built by combing two images of the same location taken at different times (adjusting for some variance etc).
+    1. Do you know a python based tool that enable us to build an inSAR image?
+    2. If not, external tool?
+    3. If not, theoretically?
+- Should we incorporate DEM imagery into the construction of inSAR imagery to get a better result?
+  - Advisable or not? If so, how?
+
+DEM:
+- Can we directly obtain the slope gradient values?
+  - If not, how do we convert images to slope gradient values?
+
+Sentinel 2:
+- Which band best distinguish areas with human settlements from non developed areas?
+
+
+
+
+
 # Technical Overview
 
 1. Obtain temporal imagery for a few landslide sight before landslide
@@ -7,12 +43,12 @@
 3. Rotate images
 4.
 
-
+### Call with Grega
 cc cover:
-- sentinel 1
-  -
+- sentinel 1 -> radar
 
-landset back to 2013 (15 m reso)
+- landset back to 2013 (15 m reso)
 
+# Cloud detection
 RF -> cloud
 apply
