@@ -31,9 +31,6 @@ Sentinel 2:
 - Which band best distinguish areas with human settlements from non developed areas?
 
 
-
-
-
 # Technical Overview
 
 1. Obtain temporal imagery for a few landslide sight before landslide
